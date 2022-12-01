@@ -1,8 +1,8 @@
 package advent.of.code;
 
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import utilitar.Utlis;
 
 
 import java.io.File;
@@ -18,7 +18,7 @@ public class Day1 {
     static List<Integer> nums;
 
     public Day1(File input) {
-        nums = staticUtils.Utlis.inputFileToIntList(input);
+        nums = Utlis.inputFileToIntList(input);
     }
 
     public int run1() {

@@ -1,4 +1,4 @@
-package advent.of.code;
+package utilitar;
 
 import java.io.*;
 import java.util.ArrayList;
