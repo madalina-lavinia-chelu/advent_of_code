@@ -5,16 +5,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Advent_of_code</artifactId>
+    <artifactId>advent_of_code2021</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>2015</module>
+        <module>advent_of_code_2021</module>
+        <module>advent_of_code_2022</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <version>1.18.24</version>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
