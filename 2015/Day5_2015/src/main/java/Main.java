@@ -6,11 +6,11 @@ public class Main {
 
         Day5 day5 = new Day5();
         long  s= 0;
-        String filePath = "2015/Day5_2015/src/main/resources/date.txt"; // Replace with the actual path to your file
+        String filePath = "2015/Day5_2015/src/main/resources/date.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line = null;
-            int numberOfLinesToRead = 1000; // Set the number of lines you want to read
+            int numberOfLinesToRead = 1000;
 
             // Read lines from the file
             for (int i = 0; i < numberOfLinesToRead && (line = br.readLine()) != null; i++) {
