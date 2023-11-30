@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Day4_part1.dir/objects.a
-C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\ar.exe cr CMakeFiles\Day4_part1.dir/objects.a @CMakeFiles\Day4_part1.dir\objects1.rsp
-C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Day4_part1.dir/objects.a -Wl,--no-whole-archive -o Day4_part1.exe -Wl,--out-implib,libDay4_part1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Day4_part1.dir\linklibs.rsp
