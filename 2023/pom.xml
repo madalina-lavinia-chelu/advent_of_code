@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>2022</artifactId>
+    <artifactId>2023</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>Day8_2022</module>
-        <module>Day1_2022</module>
+        <module>Day1_2023</module>
+        <module>Day2_2023</module>
     </modules>
 
     <properties>

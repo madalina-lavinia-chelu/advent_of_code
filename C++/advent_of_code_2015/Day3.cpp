@@ -5,35 +5,47 @@ using namespace std;
 
 ifstream fin("fisier.txt");
 
-int main()
-{
-    //the variant should contain a larger data structure
-    int x = 0, y = 0, s = 1, a[1000][1000] = {0};
+int main() {
+    // Alocare dinamică pentru matrice
+    int** a = new int*[10000];
+    for (int i = 0; i < 10000; ++i) {
+        a[i] = new int[10000]();  // Inițializare cu zero
+    }
+
+    int x = 10000/2;
+    int y = 10000/2;
+    int s = 1; // Să începem cu 1 pentru poziția inițială
     char c;
 
-    x = 1000/2;
-    y = 1000/2;
-    while( fin >> c){
-        if( c == '<')
+    while (fin >> c) {
+        if (c == '<')
             x = x - 1;
-        if( c == '>')
+        if (c == '>')
             x = x + 1;
-        if( c == '^')
+        if (c == '^')
             y = y + 1;
-        if( c == 'v')
+        if (c == 'v')
             y = y - 1;
 
         a[x][y]++;
-
     }
 
-    for (int i = 0; i < 1000/2; i++) {
-        for (int j = 0; j < 1000/2; j++) {
+    // Calculul numărului de poziții unice vizitate
+    for (int i = 0; i < 10000; i++) {
+        for (int j = 0; j < 10000; j++) {
             if (a[i][j] > 0) {
                 s++;
             }
         }
     }
-    cout<<s;
+
+    cout << "The number of unique positions visited is: " << s << endl;
+
+    // Eliberare memorie alocată dinamic
+    for (int i = 0; i < 10000; ++i) {
+        delete[] a[i];
+    }
+    delete[] a;
+
     return 0;
 }
