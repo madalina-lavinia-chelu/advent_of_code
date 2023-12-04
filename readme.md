@@ -1,4 +1,4 @@
-# Advent of Code
+[Advent of Code] (https://adventofcode.com)
 
 ## 2015 Puzzles List
 
@@ -30,7 +30,22 @@ Loading : **25 / 25** (100% ⭐️)
 * [❌ Day 24]()
 * [❌ Day 25]()
 
+
+![](https://img.shields.io/badge/2015%20stars%20⭐-50-yellow)
+![](https://img.shields.io/badge/2015%20days%20completed-25-red)
+
+<!-- @BEGIN:ImplementationsTable:2023@ -->
+| | 1                                                                                                             | 2                                                                                                    | 3                                                                                                         | 4   | 5                                                                                                     | 6 | 7   | 8   | 9 | 10 | 11  | 12  | 13  | 14 | 15 | 16 | 17  | 18  | 19  | 20 | 21  | 22  | 23  | 24  | 25  |
+| ---|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----|-------------------------------------------------------------------------------------------------------| --- |-----|-----| --- | --- |-----|-----|-----| --- | --- | --- |-----|-----|-----| --- |-----|-----|-----|-----|-----|
+| java | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day1_2015/src/main/java)          | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day1_2015/src/main/java) | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day3_2015/src/main/java)      | -   | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day5_2015/src/main/java)  | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day6_2015/src/main/java)  | -   | -   | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day9_2015/src/main/java) | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day10_2015/src/main/java) | -   | -   | -   | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day14_2015/src/main/java) | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day15_2015/src/main/java) | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day16_2015/src/main/java) | -   | -   | -   | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/2015/Day20_2015/src/main/java) | -   | -   | -   | -   | -   |
+| c++ | [✓] (https://github.com/madalina-lavinia-chelu/advent_of_code/blob/main/C%2B%2B/advent_of_code_2015/Day1.cpp) | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/C%2B%2B/advent_of_code_2015/Day2)                                                                                                | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/blob/main/C%2B%2B/advent_of_code_2015/Day3.cpp) | -   | [✓](https://github.com/madalina-lavinia-chelu/advent_of_code/tree/main/C%2B%2B/advent_of_code_2015/Day5) |  |     |     |  |  |     |     |     |  |  |  |     |     |     |  |     |     |     |     |     |
+
+<!-- @END:ImplementationsTable:2023@ -->
+
+
+
 ---
+
 
 ## 2017 Puzzles List
 
