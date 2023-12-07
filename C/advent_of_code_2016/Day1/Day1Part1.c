@@ -44,6 +44,6 @@ int main() {
     int distantaFinala = abs(x) + abs(y);
 
     printf("Cel mai scurt drum către destinație are %d blocuri distanță.\n", distantaFinala);
-
+    //298 
     return 0;
 }
