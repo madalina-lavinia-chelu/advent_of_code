@@ -4,14 +4,21 @@
 
 using namespace std;
 
-ifstream fin("date.txt");
+ifstream fin("bac.txt");
 
 bool isNumber(char s){
     return strchr("1234567890", s);
 }
 
-int find_spelled_number(char* str) {
-    if (strncmp(str, "one", 3) == 0) {
+int find_spelled_number(char str[]) {
+
+    char numbers[20][256] = {"cantitate neglijabla", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    for (int i = 1; i <= 9; i++){
+        if (strncmp(str, numbers[i], strlen(numbers[i])) == 0)
+            return i;
+    }
+
+    /*if (strncmp(str, "one", 3) == 0) {
         return 1;
     } else if (strncmp(str, "two", 3) == 0) {
         return 2;
@@ -29,7 +36,7 @@ int find_spelled_number(char* str) {
         return 8;
     } else if (strncmp(str, "nine", 4) == 0) {
         return 9;
-    }
+    }*/
 
     return 0;
 }
