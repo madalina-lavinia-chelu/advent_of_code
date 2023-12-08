@@ -20,7 +20,7 @@ int main()
         }
         s += abs(max - min);
     }
-    cout<<s;
+    cout<<s; ///41919
 
     return 0;
 }
