@@ -5,7 +5,7 @@ using namespace std;
 ifstream fin ("bac.txt");
 int repeat (char s[])
 {
-    for(int i=1; i<strlen(s); i++)
+    for(int i=1; i<strlen(s) - 1; i++)
     {
         if(s[i-1]==s[i+1])
             return 1;
