@@ -47,7 +47,7 @@ int main(){
                 valid = 1;
 
             if(valid == 0)
-                s1convert(number)] ++;
+                s1[convert(number)] ++;
             else if(strcmp(number, "|"))
                 s2[convert(number)] ++;
             number = strtok(NULL, " ");
