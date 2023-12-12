@@ -45,7 +45,7 @@ void possibleSetV2(char *number, char * color)
     }
 }
 int main(){
-    char gameCubes[4][10], *number, *color, *cp;
+    char *number, *color, *cp;
     int valid, pt2 = 0;
     char s[256], *numberGame, *cubes;
 
