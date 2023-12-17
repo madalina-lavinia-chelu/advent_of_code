@@ -1,25 +1,25 @@
 #include <iostream>
 #include <fstream>
 #include <string.h>
-
+#include <iostream>
 using namespace std;
 
 ifstream fin("date.txt");
 ofstream fout("date.out");
 
-int fr1[53] = {0};
-int fr2[53] = {0};
-int fr3[53] = {0};
 
 int main() {
-    char s[200];
-    char aux[200];
-    char part1[100] = "\0";
-    char part2[100] = "\0";
+    char s[201];
+    char aux[201];
+    char part1[101] = "\0";
+    char part2[101] = "\0";
     int i, sum = 0, x = 0;
 
     while (fin >> s) {
 
+        int fr1[53] = {0};
+        int fr2[53] = {0};
+        int fr3[53] = {0};
         x++;
 
         if(x == 1)
@@ -53,11 +53,7 @@ int main() {
             for (i = 1; i <= 52; i++)
                 if(fr1[i] > 0 && fr2[i] > 0 && fr3[i] > 0)
                     sum = sum + i;
-            for (i = 1; i <= 52; i++){
-                fr1[i] = 0;
-                fr2[i] = 0;
-                fr3[i] = 0;
-            }
+
             x = 0;
         }
 
