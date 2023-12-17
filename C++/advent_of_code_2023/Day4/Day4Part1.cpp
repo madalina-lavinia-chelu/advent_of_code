@@ -38,7 +38,7 @@ int main(){
 
     while(fin.getline(s, 256)){
         int valid = 0, pt2 = 0;
-        int s1[101] = {0}, s2[101] = {0},
+        int s1[101] = {0}, s2[101] = {0};
         number = strtok(NULL, ":");
         number = strtok(NULL, " ");
 
