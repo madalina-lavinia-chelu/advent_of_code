@@ -1,40 +1,40 @@
-#include <iostream>
-#include <vector>
+#include <stdio.h>
 
-void executaIntcode(std::vector<int>& program) {
-    for (size_t i = 0; i < program.size(); i += 4) {
-        int codOp = program[i];
+void runIntcode(int *program, int size) {
+    for (int i = 0; i < size; i += 4) {
+        int opcode = program[i];
 
-        if (codOp == 99) {
-            // Opriți programul
+        if (opcode == 99) {
+            // Halt the program
             break;
         }
 
         int operand1 = program[program[i + 1]];
         int operand2 = program[program[i + 2]];
-        int indexRezultat = program[i + 3];
+        int resultIndex = program[i + 3];
 
-        if (codOp == 1) {
-            // Adunare
-            program[indexRezultat] = operand1 + operand2;
-        } else if (codOp == 2) {
-            // Înmulțire
-            program[indexRezultat] = operand1 * operand2;
+        if (opcode == 1) {
+            // Addition
+            program[resultIndex] = operand1 + operand2;
+        } else if (opcode == 2) {
+            // Multiplication
+            program[resultIndex] = operand1 * operand2;
         }
     }
 }
 
 int main() {
-    std::vector<int> program = {1, 9, 10, 3, 2, 3, 11, 0, 99, 30, 40, 50};
+    int v[] = {1,9,10,3,2,3,11,0,99,30,40,50};
+    int n = sizeof(v) / sizeof(v[0]);
 
-    // Restabilirea programului de asistență gravitațională
-    program[1] = 9;
-    program[2] = 10;
+    // Restore gravity assist program
+    v[1] = 9;
+    v[2] = 10;
 
-    executaIntcode(program);
+    runIntcode(v, n);
 
-    // Afișarea valorii rămase la poziția 0
-    std::cout << "Valoarea la poziția 0: " << program[0] << std::endl;
+    // Print the value left at position 0
+    printf("Value at position 0: %d\n", v[0]);
 
     return 0;
 }
