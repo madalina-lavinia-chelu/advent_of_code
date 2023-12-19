@@ -5,12 +5,18 @@ ifstream fin ("date.txt");
 int main()
 {
     int x;
-    long long s = 0;
+    long long s=0;
     while(fin>>x)
     {
-        s += (x / 3 - 2);
+        int n=0;
+        while(x>0)
+        {
+            n=x/3-2;
+            if(n>=0)
+                s+=n;
+            x=n;
+        }
     }
     cout<<s;
     return 0;
 }
-
